@@ -13,7 +13,7 @@ The following steps are required each time you re-start the environment to compl
 - Set up env.py file
 - Add any additional requirements
 
-### <div align="center">Install Dependencies</div>
+### <div align="center">Installing Dependencies</div>
 
 There are a number of ways to set up a Flask app. In this instance, Flask will run with flask-pymongo, a tool for communications with MongoDB, the DBMS that is used here. In addition, dnspython will be used to assist with queries. The follwing commands, typed into the CLI, will install these requirements:
 
@@ -50,3 +50,5 @@ os.environ.setdefault("MONGO_DBNAME", **************)
 ### <div align="center">Additional Dependencies</div>
 
 Naturally, there can be many more dependencies you may choose to use. When doing this, just remember to update the requirements.txt file with these new dependencies.
+
+These steps will need repeating each time your environment is closed and reopened as the env.py file is purposefully not pushed to GitHub to protect the details for your database.
