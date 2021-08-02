@@ -28,7 +28,6 @@
                     <!--=========== for those logged in -->
                     {% if session.member %}
                         <li><a href="{{ url_for('members', member=session['member']) }}" class="underline">Member's Area</a></li>
-                        <li><a href="{{ url_for('add_film') }}" class="underline">Add Film</a></li>
                         <li><a href="{{ url_for('logout') }}" class="underline">Log Out</a></li>
                     <!--=========== for non-members / those logged out -->
                     {% else %}
@@ -50,7 +49,6 @@
             <!--=========== for those logged in -->
             {% if session.member %}
                 <li><a href="{{ url_for('members', member=session['member']) }}">Member's Area</a></li>
-                <li><a href="{{ url_for('add_film') }}">Add Film</a></li>
                 <li><a href="{{ url_for('logout') }}">Log Out</a></li>
             <!--=========== for non-members / those logged out -->
             {% else %}
